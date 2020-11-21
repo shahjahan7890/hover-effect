@@ -1,0 +1,46 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: poppins;
+}
+.box{
+	height: 200px;
+	width: 200px;
+	border: 1px solid #ff0000;
+	margin: 200px auto 0px;
+	position: relative;
+	border-radius: 50%;
+
+}
+.box:before{
+	content: '';
+	display: block;
+
+	width: 200px;
+	height: 200px;
+	border: 1px solid #acacac;
+	position: absolute;
+	top: 0;
+	right: 100%;
+	transition: .5s;
+}
+.box:after{
+	content: '';
+	display: block;
+
+	width: 200px;
+	height: 200px;
+	border: 1px solid green;
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transition: .5s;
+}
+.box:hover:before{
+	top: 0;
+	right: 0;
+}
+.box:hover:after{
+	top: 0;
+	left: 0;
+}
